@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif !important;
     background-color: #F8FAFF !important;
-    
+
 }
 
 a {
@@ -115,7 +120,7 @@ a {
 }
 
 .table-container {
-    width: 937px;
+    width: 937px !important;
     margin: auto;
 }
 
@@ -136,7 +141,7 @@ a {
     font-size: 14px;
     line-height: 21px;
     color: #6E6E6E;
-    padding: 19px 0;
+    padding: 19px 10px;
 }
 
 .btn-secondary {
@@ -311,6 +316,30 @@ a {
 
 }
 
-.input-group{
+.input-group {
     margin-bottom: 27px;
+}
+
+
+/* container */
+.col,
+.row,
+.content-row,
+.header-col,
+.col-breadcrumbs,
+.col-profile {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+
+/* mobile nav */
+.mobile-nav {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
 }
