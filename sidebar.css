@@ -1,0 +1,72 @@
+/* The side navigation menu */
+.logo {
+    margin-left: 25px;
+    margin-bottom: 43px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 256px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    padding-top: 22px;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7D7D;
+    padding: 13px 25px;
+    text-decoration: none;
+}
+
+.sidebar a img {
+    margin-right: 20px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    color: #343434;
+    position: relative;
+}
+
+.sidebar a.active::before,
+.sidebar a:hover::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: #6666CC;
+    box-shadow: 0px 2px 10px rgba(102, 102, 204, 0.67);
+    width: 4px;
+    height: 49px;
+    left: 0;
+
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    color: #343434;
+}
+
+
+div.content-col {
+    margin-left: 250px;
+    margin-top: 22px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+
+}
