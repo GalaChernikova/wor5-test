@@ -1,34 +1,38 @@
 @media (max-width: 1400px) {
     .breadcrumb {
         margin-bottom: 30px !important;
-        padding-left: 10px !important;
     }
-    .profile{
-        padding-left: 10px;
+
+    .profile {
         margin-bottom: 30px;
     }
-    div.content-col{
+
+    div.content-col {
         margin-left: 275px;
     }
 }
 
 @media (max-width: 1300px) {
-    .settings-container{
+    .settings-container {
         max-width: 920px !important;
         width: 100%;
     }
-    .table-container{
+
+    .table-container {
         width: 850px !important;
     }
 }
+
 @media (max-width: 1200px) {
-    div.content-col{
+    div.content-col {
         margin-left: 280px;
     }
-    .settings-container{
+
+    .settings-container {
         max-width: 840px !important;
         width: 100%;
     }
+
     .table-container {
         width: 775px !important;
     }
@@ -39,30 +43,143 @@
     .sidebar {
         display: none;
     }
-    div.content-col{
+
+    div.content-col {
         margin-left: 20px;
     }
-    .mobile-nav{
+
+    .mobile-nav {
         display: flex;
     }
 
 }
+
 @media screen and (max-width: 900px) {
-    .settings-container{
+    .settings-container {
         max-width: 800px !important;
         width: 100%;
     }
+
     .table-container {
         width: 775px !important;
     }
 }
 
 @media screen and (max-width: 850px) {
-    .settings-container{
-        max-width: 800px !important;
+
+    .settings-container {
+        max-width: 700px !important;
+        width: 100%;
+        height: auto;
+    }
+
+    .table-container {
+        display: flex;
+        width: 630px !important;
+    }
+
+    .table-title-row,
+    .table-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .settings-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        max-width: 200px;
+    }
+
+    .table-data {
+        padding: 15px 10px;
+    }
+
+    .table-title {
+        padding: 19px 0px;
+    }
+
+    .table-row:not(:last-child) {
+        border-bottom: none;
+
+    }
+
+    .table-title-row {
+        margin-right: 20px !important;
+    }
+
+    .table-row {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .table-container {
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+
+    .table-row:not(:last-child) {
+        border-bottom: 1px solid rgba(177, 177, 177, 0.35);
+    }
+
+    .table-title-mobile {
+        display: flex;
+    }
+
+    .settings-container {
+        max-width: 500px !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .settings-container {
+        max-width: 450px !important;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .settings-container {
+        max-width: 400px !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .settings-container {
+        max-width: 350px !important;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+    .settings-container {
+        max-width: 310px !important;
         width: 100%;
     }
     .table-container {
-        width: 775px !important;
+        flex-wrap: wrap;
+        max-width: 300px;
+    }
+    .table-title-row {
+        margin-right: 10px !important;
+    }
+    .table-row {
+        max-width: 175px;
+        width: 100%;
+    }
+    .settings-buttons{
+        max-width: 175px;
+    }
+    .profile{
+        width: 300px;
+    }
+    .profile__name{
+        width: 220px;
+    }
+    .profile__name-text p,
+    .profile__name img {
+        margin-left: 10px;
     }
 }
